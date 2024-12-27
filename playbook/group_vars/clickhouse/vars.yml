@@ -1,8 +1,0 @@
----
-clickhouse_version: "22.6.6.16"
-# clickhouse_packages:
-#   - clickhouse-client
-#   - clickhouse-server
-#   - clickhouse-common-static
-
-repo_click: "https://packages.clickhouse.com/deb/pool/main/c"
