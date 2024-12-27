@@ -3,10 +3,12 @@
   hosts: clickhouse
   roles:
     - role: clickhouse-role
+
 - name: Install Vector
   hosts: vector
   roles:
     - role: vector-role
+
 - name: Install Lighthouse
   hosts: lighthouse
 
@@ -17,7 +19,8 @@
         name: nginx
         state: restarted
   pre_tasks:
-    - name: Update Repository cache
+    - name: Update Repository
+      become: true
       ansible.builtin.apt:
         update_cache: true
     - name: Install Nginx
