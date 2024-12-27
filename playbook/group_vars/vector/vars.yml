@@ -1,0 +1,5 @@
+---
+vector_version: "latest-1"
+vector_release: "latest"
+vector_config_file: /etc/vector/vector.yaml
+vector_template: ./template/vector.yaml.j2
